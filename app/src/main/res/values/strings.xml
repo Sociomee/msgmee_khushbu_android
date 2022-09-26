@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="term_condition"><b><font fgcolor="#9597A1">By Signing-up, you agree to our</font><font fgcolor="#555555"> Terms &amp; Conditions.</font></b></string>
+    <string name="terms_condition"><b><font fgcolor="#9597A1">Learn how we process your data in our</font><font fgcolor="#555555"> Privacy Policy</font></b></string>
+    <string name="term_conditions"><b><font fgcolor="#555555"> and Cookies Policy.</font></b></string>
+    <string name="anura">\@anura123</string>
+    <string name="anuraR">\@anuragSaini148</string>
+    <string name="anuraL">\@anurag_saini012</string>
+    <string name="dialogTitle">Alert for Location</string>
+    <string name="dialogMessage">Do You Want to Enable Location(Recommended)</string>
+    <string name="used_cradle"><u>Kashif Kashmiri\n Applesstraight\n from Kashmir</u></string>
+    <string name="used_cradle1"><u>Kashif Kashmiri</u></string>
+    <string name="backup">Back up your messages and videos to selected google drive you can restore them when you reinstall MsgMee </string>
+    <string name="privacy_switch">If turned off, you want send or receive read receipt. read receipts are always sent for group chats and direct chats </string>
+    <string name="chat_notification">You will hear the system default sound when a message is sent or received</string>
+    <string name="msg_preview">You will get preview of the text message notification at the top of your screen</string>
+    <string name="group_notification">You will hear the system default sound when a message is sent or received</string>
+    <string name="share_link">Share Msgmee link to your connections and Contacts  </string>
+    <string name="sync_sociomee">You can sync your SocioMee Connections</string>
+    <string name="report_problem">Please explain what happened and how should we resolve the issue</string>
+    <string name="text_reason">To deleted your account, confirm your country code and enter your phone number </string>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <style name="ShapeAppearanceOverlayExtended" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item>
+        <item name="cornerSizeTopLeft">50%</item>
+        <item name="cornerSizeTopRight">50%</item>
+    </style>
+
+</resources>

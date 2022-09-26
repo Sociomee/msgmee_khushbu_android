@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all_s"
+        android:title="Select all chats"
+        />
+    <item
+        android:id="@+id/all_c"
+        android:title="Clear all chats"/>
+</menu>

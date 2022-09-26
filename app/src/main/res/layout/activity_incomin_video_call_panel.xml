@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/faded_bg"
+    tools:context=".calls.IncominVideoCallPanel">
+
+    <!--    Header-->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <!--        Add grp_members  -->
+        <RelativeLayout
+            android:id="@+id/add_grp_members"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_person_add_24"
+                app:tint="#566482" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/redirect"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/voice_pic" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:layout_above="@+id/footer">
+
+        <RelativeLayout
+            android:id="@+id/incoming_video_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/voice_callbg"/>
+    </androidx.cardview.widget.CardView>
+
+    <!--    Footer  -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_marginBottom="30dp"
+        android:weightSum="4"
+        android:paddingHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/speaker" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/close_cam" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/close_call"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#FC2447"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cut" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mic_off" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

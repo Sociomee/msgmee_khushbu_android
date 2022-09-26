@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Invite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/arrw"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="back"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/arrw"
+                android:fontFamily="@font/poppins_bold"
+                android:text="New message"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/dot"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dots"/>
+        </RelativeLayout>
+        <View
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@null"
+                android:queryHint="Search......"
+                app:theme="@style/AppSearchView" />
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_tune_24" />
+        </RelativeLayout>
+        <View
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"/>
+
+        <TextView
+            android:id="@+id/connections"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Connections"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerViewF"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <RelativeLayout
+           android:paddingVertical="10dp"
+           android:paddingHorizontal="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_centerInParent="true"
+               android:layout_marginLeft="10dp"
+               android:fontFamily="@font/poppins_bold"
+               android:text="Invite Friends"
+               android:textColor="@color/black"
+               android:textFontWeight="600"
+               android:textSize="16dp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/invite_all"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerInParent="true"
+               android:layout_marginRight="15dp"
+               android:fontFamily="@font/poppins_bold"
+               android:text="Invite all"
+               android:textColor="@color/light_green"
+               android:textFontWeight="400"
+               android:textSize="14dp"
+               android:textStyle="bold" />
+
+       </RelativeLayout>
+    <ListView
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:divider="@null"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true" />
+    </LinearLayout>
+</LinearLayout>

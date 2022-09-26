@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    tools:context=".Settings.Delete_Account_Activity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/linear_delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/delete_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/back_arroww"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/back_arroww"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Delete my account"
+                        android:textColor="@color/black"
+                        android:textFontWeight="500"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:elevation="10dp"
+                    android:background="#E0E0E0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chats_setting"/>
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/img_warning"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_delete_account"
+                android:src="@drawable/warnning"
+                app:tint="#EB5757"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/text_delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/img_warning"
+                app:layout_constraintTop_toBottomOf="@+id/linear_delete_account"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:text="Deleting your account will: "
+                android:textColor="#EB5757"
+                android:textSize="18sp"
+                android:textFontWeight="500"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <View
+                android:id="@+id/view1_circle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                app:layout_constraintStart_toStartOf="@+id/text_delete_account"
+                app:layout_constraintTop_toBottomOf="@+id/text_delete_account"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_circle_bg"/>
+
+
+            <TextView
+                android:id="@+id/text_message_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_delete_account"
+                app:layout_constraintStart_toStartOf="@+id/text_delete_account"
+                android:layout_marginStart="20dp"
+                android:text="Erase your message history "
+                android:textFontWeight="500"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <View
+                android:id="@+id/view2_circle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                app:layout_constraintStart_toStartOf="@+id/view1_circle"
+                app:layout_constraintTop_toBottomOf="@+id/text_message_history"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_circle_bg"/>
+
+            <TextView
+                android:id="@+id/text_delete_groups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete you from all your MsgMee\ngroups"
+                app:layout_constraintStart_toStartOf="@+id/text_message_history"
+                app:layout_constraintTop_toBottomOf="@+id/text_message_history"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"
+                android:textFontWeight="500"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <View
+                android:id="@+id/view3_circle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                app:layout_constraintStart_toStartOf="@+id/view2_circle"
+                app:layout_constraintTop_toBottomOf="@+id/text_delete_groups"
+                android:background="@drawable/view_circle_bg"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/text_delete_groups"
+                app:layout_constraintTop_toBottomOf="@+id/text_delete_groups"
+                android:text="Delete your all Google Drive backup"
+                android:textFontWeight="500"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:id="@+id/text_type_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type your reasion"
+                android:textColor="#333333"
+                app:layout_constraintTop_toBottomOf="@+id/view3_circle"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:textFontWeight="600"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <EditText
+                android:id="@+id/edt_type_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/text_type_reason"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/search_bg"
+                android:layout_marginTop="10dp"
+                android:hint="Type your reason (optional)..."
+                android:textSize="14sp"
+                android:textFontWeight="400"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="12dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_type_reasson"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintTop_toBottomOf="@+id/edt_type_reason"
+                android:layout_marginTop="20dp"
+                android:background="#F6F6F6">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    android:text="@string/text_reason"
+                    android:paddingLeft="25dp"
+                    android:textFontWeight="500"
+                    android:textSize="13sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingEnd="25dp"/>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/mobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_type_reasson"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:textFontWeight="600"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <EditText
+                android:id="@+id/edt_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_no"
+                android:background="@drawable/search_bg"
+                android:padding="12dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:hint="(+91)  9876543210"
+                android:textSize="14sp"
+                android:textFontWeight="400"
+                android:maxLength="10"
+                android:inputType="number"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#999999"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/text_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_mobile_no"
+                android:textColor="#333333"
+                android:textFontWeight="600"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="25dp"/>
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_password"
+                android:padding="12dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/search_bg"
+                android:layout_marginTop="10dp"
+                android:hint="Enter password"
+                android:textSize="14sp"
+                android:textFontWeight="400"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#999999"/>
+
+
+            <Button
+                android:id="@+id/btn_delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/edt_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="#EB5757"
+                android:ems="11"
+                android:padding="8dp"
+                android:text="Delete my account"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textFontWeight="500"
+                android:fontFamily="@font/poppins_regular"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

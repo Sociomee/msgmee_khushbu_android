@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_weight="0.6"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/lang_picker"
+            android:layout_centerInParent="true"
+           android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/chqTxt"
+                android:src="@drawable/globe" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/chqTxt"
+                android:textFontWeight="400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="English"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        <ImageView
+            android:layout_toRightOf="@id/chqTxt"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+        </LinearLayout>
+
+        <Spinner
+            android:visibility="gone"
+            android:id="@+id/modelEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp" />
+
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/poppins_bold"
+
+            android:text="CONTINUE"
+            android:textColor="@color/light_grey"
+            android:textFontWeight="500"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/internetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="We are connected to the Internet" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/noInternetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_internet_image"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/nointernet" />
+
+        <TextView
+            android:id="@+id/no_internet_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_internet_image"
+            android:layout_centerHorizontal="true"
+            android:text="No Internet Connection"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/no_internet_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_internet_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginVertical="32dp"
+            android:gravity="center"
+            android:text="Check your Internet Connection and Try Again"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/try_again_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_internet_text"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:paddingHorizontal="32dp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp" />
+
+    </RelativeLayout>
+    <!--<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/recyclerView"
+    android:layout_height="250dp">
+
+</androidx.recyclerview.widget.RecyclerView>
+ -->   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_weight="1.3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="33dp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/Country_box"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/transparent_graybox"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/CountryTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/imageViewFlag"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+
+        </LinearLayout>
+
+
+        <EditText
+
+            android:id="@+id/mobile_no_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/transparent_graybox"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter your mobile number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="When you click on continue, you will recieve a verification\n      code on the mobile number that you have entered."
+        android:textColor="#415047"
+        android:textFontWeight="400"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/submit"
+        android:layout_above="@id/submitt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/purple_box"
+        android:gravity="center"
+        android:paddingVertical="15dp">
+
+        <TextView
+            android:alpha="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CONTINUE"
+            android:fontFamily="@font/poppins_bold"
+            android:textFontWeight="700"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/submitt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/termTxt"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="500"
+            android:text="@string/term_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/priv"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="500"
+            android:text="@string/terms_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/coo"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="500"
+            android:text="@string/term_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.inmortal.messenger">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true"
+        android:requiredFeature="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="MsgMee_KU"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Messenger"
+        tools:replace="android:theme">
+        <activity
+            android:name=".Settings.Delete_Account_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.Report_Problem_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.HelpSupport_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.Contact_Invite_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.SyncingInvite_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.Blockedusers_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.Notification_setting"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.Privacy_Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.Chats_Setting"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileSettings"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileInfo"
+            android:exported="false" />
+        <activity
+            android:name=".BizPageAndMarketPlace.MarketPlaceSeller"
+            android:exported="false" />
+        <activity
+            android:name=".BizPageAndMarketPlace.MarketPlaceChat"
+            android:exported="false" />
+        <activity
+            android:name=".BizPageAndMarketPlace.BizpageName"
+            android:exported="false" />
+        <activity
+            android:name=".BizPageAndMarketPlace.BizpageMessage"
+            android:exported="false"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".BizPageAndMarketPlace.BizpageChat"
+            android:exported="false" />
+        <activity
+            android:name=".calls.CallsInfo"
+            android:exported="false" />
+        <activity
+            android:name=".calls.IncominVideoCallPanel"
+            android:exported="false" />
+        <activity
+            android:name=".calls.IncomingVideoCall"
+            android:exported="false" />
+        <activity
+            android:name=".calls.VidoeCallPanel"
+            android:exported="false" />
+        <activity
+            android:name=".calls.SingleVideoCall"
+            android:exported="false" />
+        <activity
+            android:name=".calls.DuringVoiceCall"
+            android:exported="false" />
+        <activity
+            android:name=".calls.IncomingVoiceCall"
+            android:exported="false" />
+        <activity
+            android:name=".calls.VoiceCallPanel"
+            android:exported="false" />
+        <activity
+            android:name=".calls.SingleAudioCall"
+            android:exported="false" />
+        <activity
+            android:name=".calls.MakeCalls"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.AddMemberToGrp"
+            android:exported="false" />
+        <activity
+            android:name=".testing.ChattingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.RecieverChat"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.ForwardMessage"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.MessageInfoSingle"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.ArchiveDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.MessageInfo"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.GroupDocs"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.StorageSettings"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.SettingsMain"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Larger"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Forwarded"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.ManageStorage"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.SendChatDocs"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.GalleryVideoEdit"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.GalleryBrightness"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.GalleryFilter"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.GallerySend"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Gallery"
+            android:exported="false" />
+        <activity
+            android:name=".Broadcast.BroadcastList"
+            android:exported="false" />
+        <activity
+            android:name=".Broadcast.BroadcastChat"
+            android:exported="false" />
+        <activity
+            android:name=".Broadcast.BroadcastInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Broadcast.NewBroadcast"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Blocked"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.AttachContact"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.GroupInfo"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Group"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.UnknownChat"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Media"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Search"
+            android:exported="false" />
+        <activity
+            android:name=".SocialChat.Chat"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.MVVM"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Invite"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Dashboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Home"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Cookie"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Privacy"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Terms"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Otp"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" >
+        </activity>
+        <activity android:name=".StartActivity" />
+    </application>
+
+</manifest>

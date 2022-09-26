@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialChat.Media">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/arr"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:onClick="back"
+            android:outlineAmbientShadowColor="@color/black"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/arr"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Razdar Hasan"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/social"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/light_green"
+                android:layout_weight="1"
+                android:text="Media"/>
+
+            <TextView
+                android:id="@+id/calls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="500"
+                android:layout_weight="1"
+                android:text="Docs"/>
+
+            <TextView
+                android:id="@+id/Links"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="500"
+                android:layout_weight="1"
+                android:text="Links"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_weight="1"
+                android:id="@+id/social_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/green_box" />
+            <View
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:id="@+id/calls_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/green_box" />
+            <View
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:id="@+id/links_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/green_box" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+    </LinearLayout>
+
+<!--    Media View (Tab First) id => media -->
+    <LinearLayout
+        android:id="@+id/media"
+        android:layout_below="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECENT"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="500"
+            android:textSize="13dp"
+            android:textColor="#4F4F4F"/>
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="129dp"
+            android:src="@drawable/girl"/>
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST WEEK"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="500"
+            android:textSize="13dp"
+            android:textColor="#4F4F4F"/>
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+        </LinearLayout>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST MONTH"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="500"
+            android:textSize="13dp"
+            android:textColor="#4F4F4F"/>
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="-40dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="89dp"
+                android:layout_height="129dp"
+                android:src="@drawable/girl"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--    Docs View (Tab Second) id => docs -->
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/docs"
+    android:layout_below="@id/nav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="RECENT"
+            android:textColor="#4F4F4F"
+            android:textFontWeight="500"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/page"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/page" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/page"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rural Development.pdf"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="65 page .25 MB .PDF"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="4:04 PM"
+            android:textColor="#4F4F4F80"
+            android:textFontWeight="400"
+            android:textSize="13dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3F4EA"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="LAST  WEEK"
+            android:textColor="#4F4F4F"
+            android:textFontWeight="500"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/page1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/page" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/page1"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rural Development.pdf"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="65 page .25 MB .PDF"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="30/12/2021"
+            android:textColor="#4F4F4F80"
+            android:textFontWeight="400"
+            android:textSize="13dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3F4EA"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingHorizontal="15dp">
+
+
+
+        <ImageView
+            android:id="@+id/page2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/page" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/page2"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Rural Development.pdf"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="65 page .25 MB .PDF"
+                android:textColor="#000000"
+                android:textFontWeight="400"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="30/12/2021"
+            android:textColor="#4F4F4F80"
+            android:textFontWeight="400"
+            android:textSize="13dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3F4EA"/>
+</LinearLayout>
+
+    <!--    Links (Tab Third) id => link -->
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/link"
+    android:layout_below="@id/nav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="RECENT"
+            android:textColor="#4F4F4F"
+            android:textFontWeight="500"
+            android:textSize="13dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_custom_box"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/linkk" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Find &amp; Download 4,078 Link Icon Icons in Line,
+Flat, Glyph, Colored Outline, and many more
+design styles for web, mobile, and graphic. "
+                    android:textColor="#000000"
+                    android:textFontWeight="400"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="docs.google.com"
+                    android:textColor="#4F4F4F80"
+                    android:textFontWeight="400"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/outline_box_trans"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="https://iconscout.com/icons/link-icon?price=free"
+                android:textColor="#4F4F4F"
+                android:textFontWeight="400"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="LAST  WEEK"
+            android:textColor="#4F4F4F"
+            android:textFontWeight="500"
+            android:textSize="13dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_custom_box"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/linkk" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Find &amp; Download 4,078 Link Icon Icons in Line,
+Flat, Glyph, Colored Outline, and many more
+design styles for web, mobile, and graphic. "
+                    android:textColor="#000000"
+                    android:textFontWeight="400"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="docs.google.com"
+                    android:textColor="#4F4F4F80"
+                    android:textFontWeight="400"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/outline_box_trans"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="https://iconscout.com/icons/link-icon?price=free"
+                android:textColor="#4F4F4F"
+                android:textFontWeight="400"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

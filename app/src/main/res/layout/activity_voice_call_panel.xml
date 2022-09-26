@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#106931"
+    android:id="@+id/whole_body"
+    tools:context=".calls.VoiceCallPanel">
+
+<!--    Header-->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+<!--        Add grp_members  -->
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/add_grp_members"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_person_add_24"
+                app:tint="#566482" />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="50dp">
+
+            <LinearLayout
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="6dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-1dp"
+                    android:src="@drawable/ic_baseline_person_add_24"
+                    app:tint="#566482" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Add more"
+                    android:textColor="#566482"
+                    android:textFontWeight="600"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+<!--    Body when multiple calling users -->
+    <LinearLayout
+        android:visibility="gone"
+       android:gravity="center"
+        android:id="@+id/main_view_after_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/voice_pic" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/voice_pic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/voice_pic" />
+
+                <ImageView
+                    android:id="@+id/center_pic"
+                    android:layout_width="160dp"
+                    android:layout_height="150dp"
+                    android:layout_marginVertical="20dp"
+                    android:src="@drawable/voice_pic" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/voice_pic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/voice_pic" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/voice_pic" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Group Calling"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="21dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="02:53"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+<!--   Body -->
+<LinearLayout
+    android:id="@+id/navigate"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/voice_pic"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milana Kyles"
+        android:textFontWeight="600"
+        android:textSize="21dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02:53"
+        android:textFontWeight="600"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+</LinearLayout>
+
+
+<!--    Footer  -->
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:weightSum="4"
+        android:paddingHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/speaker" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/close_cam" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/end_call"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#FC2447"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cut" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mic_off" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

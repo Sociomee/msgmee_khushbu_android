@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_googleaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/googleaccount_image"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/categories2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+      <RadioGroup
+          android:id="@+id/radiogrou_googleaccount"
+          android:layout_width="0dp"
+          android:layout_height="72dp"
+          app:layout_constraintStart_toEndOf="@id/googleaccount_image"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:paddingEnd="10dp"
+          android:paddingTop="10dp"
+          android:orientation="vertical"
+          >
+
+
+          <RadioButton
+              android:id="@+id/radiobtn_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:buttonTint="@color/light_green"
+              android:layoutDirection="rtl"
+              android:textSize="14sp"
+              android:textColor="#1976D2"
+              android:textFontWeight="500"
+              android:fontFamily="@font/poppins_regular"
+              android:text="Saqib Saifi" />
+
+          <TextView
+              android:id="@+id/text_email"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="abcd@gmail.com"
+              android:layout_marginTop="-10dp"
+             android:textFontWeight="500"
+              android:textColor="#555555"
+              android:textSize="11sp"
+              android:fontFamily="@font/poppins_regular"/>
+
+
+
+      </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3F4EA"
+        app:layout_constraintTop_toBottomOf="@+id/constrain_googleaccount"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

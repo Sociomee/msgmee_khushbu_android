@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp"
+      android:layout_marginStart="10dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/curv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:paddingTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20dp"
+            android:textFontWeight="500"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Change Country Code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+<!--
+        <EditText
+            android:id="@+id/editTxt"
+            android:background="@null"
+            android:drawableTint="@color/black"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:drawablePadding="15dp"
+            android:hint="Search country name or telecode..."
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="12dp"/>
+-->
+
+        <SearchView
+            android:id="@+id/editTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:background="@null"
+            android:queryBackground="@null"
+            android:queryHint="Search country name or telecode..."
+          />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:elevation="10dp"
+            android:background="#E0E0E0"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:paddingHorizontal="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/defaulT"
+                android:src="@drawable/defaultt"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+
+            <TextView
+                android:text="Default selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/defaulT"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:textFontWeight="600"
+                android:fontFamily="@font/poppins_bold"
+                android:text="+00"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerView"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+
+</RelativeLayout>

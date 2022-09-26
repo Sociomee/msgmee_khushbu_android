@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curv"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/grey_curve_box" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lastseen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Group Privacy "
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_addgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastseen"
+        android:layout_centerHorizontal="true"
+        android:text="Who can view me in group" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:layout_below="@+id/text_addgroup">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/privacy_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/custom_bordered_ripple"
+            android:clickable="true"
+            android:focusable="true">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn__groupsp_everyone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:buttonTint="@color/light_green"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Everyone"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E3F4EA"
+                    app:layout_constraintTop_toBottomOf="@+id/mobiledata_nomedia" />
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn_groupsp_mycontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:buttonTint="@color/light_green"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:text="My contacts"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E3F4EA"
+                    app:layout_constraintTop_toBottomOf="@+id/radiobtn_every4hour" />
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn_groupsp_mycontactexcept"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:buttonTint="@color/light_green"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layoutDirection="rtl"
+                    android:paddingLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:text="My contacts except"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E3F4EA"
+                    app:layout_constraintTop_toBottomOf="@+id/radiobtn_everyday" />
+
+
+                <RadioButton
+                    android:id="@+id/radiobtn_groupsp_nobody"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:buttonTint="@color/light_green"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layoutDirection="rtl"
+                    android:text="Nobody"
+                    android:paddingLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+
+
+            </RadioGroup>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

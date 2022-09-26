@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/curv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="4dp"
+                android:background="#C4C4C4"/>
+
+            <TextView
+                android:id="@+id/ne"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:textColor="#4F4F4F"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Message"/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make a call"/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+   <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Group"/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+   <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a Broadcast"/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+<TextView
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Archived Chats List"/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+   <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sync your SocioMee connections"/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+   <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+   <TextView
+                android:id="@+id/log_out"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+       android:layout_marginBottom="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"/>
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

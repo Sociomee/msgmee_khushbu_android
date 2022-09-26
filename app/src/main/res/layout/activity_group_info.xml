@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialChat.GroupInfo">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/arr"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:onClick="back"
+            android:outlineAmbientShadowColor="@color/black"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/arr"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Group Info"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="SAVE"
+            android:textColor="@color/light_green"
+            android:textFontWeight="500"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/divider"
+        android:elevation="5dp"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3F4EA"/>
+
+    <ScrollView
+        android:layout_below="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/inf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Group image"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Change"
+                        android:textColor="@color/light_green"
+                        android:textFontWeight="600"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/pic" />
+
+                <LinearLayout
+                    android:id="@+id/info_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Development Group"
+                    android:textColor="#4F4F4F"
+                    android:textFontWeight="600"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="The office environment is now a day’s encouraging employees, not by incentives, but various other ways such as activity centres, kids area, motiva- tional quotes. These quotes on the wall of the cabins motivate the employees to work better."
+                    android:textColor="#000000"
+                    android:textFontWeight="400"
+                    android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/edit"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Name*"
+                        android:textColor="#4F4F4F"
+                        android:textFontWeight="600"
+                        android:textSize="17dp"/>
+
+                    <EditText
+                        android:padding="10dp"
+                        android:background="@drawable/outline_square_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your Group name..."
+                        android:fontFamily="@font/poppins_regular"
+                        android:textFontWeight="400"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Summary*"
+                        android:textColor="#4F4F4F"
+                        android:textFontWeight="600"
+                        android:textSize="17dp"/>
+
+                    <EditText
+                        android:padding="10dp"
+                        android:background="@drawable/outline_square_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Describe your Group..."
+                        android:fontFamily="@font/poppins_regular"
+                        android:textFontWeight="400"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:textColor="#333333"
+                        android:textSize="13dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textFontWeight="400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max 180 Characters"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/divider1"
+                android:elevation="2dp"
+                android:layout_below="@+id/inf"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+
+            <RelativeLayout
+                android:id="@+id/mute"
+                android:layout_below="@id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Mute Notification"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/light_green"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/mute"
+                android:background="#E3F4EA"
+                android:elevation="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_below="@id/divider2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Group"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="15dp"
+                    android:textFontWeight="600"
+                    android:textColor="#FF822E"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/add"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Add more participants"
+                    android:textColor="@color/light_green"
+                    android:textFontWeight="600"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <SearchView
+                    android:layoutDirection="rtl"
+                    android:id="@+id/search_g"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="false"
+                    android:background="@drawable/outline_square_trans"
+                    android:queryBackground="@null"
+                    android:animateLayoutChanges="true"
+                    app:theme="@style/AppSearchView"
+                    android:queryHint="Search Participants..."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Participant"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="15dp"
+                    android:textFontWeight="400"
+                    android:textColor="#000000"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/poc"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/pic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/poc"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="Abriella Bond"
+                        android:textColor="#151624"
+                        android:textFontWeight="500"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Group Admin"
+                        android:textColor="#2F80ED"
+                        android:textFontWeight="400"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pic" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/poc"
+                        android:fontFamily="@font/sf_pro"
+                        android:text="Azul Baldwin"
+                        android:textColor="#151624"
+                        android:textFontWeight="500"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

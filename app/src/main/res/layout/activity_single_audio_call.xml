@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/voice_callbg"
+    tools:context=".calls.SingleAudioCall">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:text="Anurag"/>
+
+        <LinearLayout
+            android:id="@+id/connect"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/voice_call"/>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textFontWeight="400"
+                android:textSize="17dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:textColor="#F8F8F8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Calling..."/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ringing"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/voice_call"/>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textFontWeight="400"
+                android:textSize="17dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:textColor="#F8F8F8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Ringing..."/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Connecting"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/voice_call"/>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textFontWeight="400"
+                android:textSize="17dp"
+                android:fontFamily="@font/niramit_semibold"
+                android:textColor="#F8F8F8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Connecting..."/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/call_cut"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|center"
+        android:src="@drawable/call_cut" />
+
+</FrameLayout>

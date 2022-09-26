@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/curv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="4dp"
+                android:background="#C4C4C4"/>
+
+        <LinearLayout
+            android:id="@+id/search_b"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bordered_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"/>
+            <View
+               android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+
+        </LinearLayout>
+        <LinearLayout
+        android:id="@+id/clear_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bordered_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+        <TextView
+          android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:text="Clear Chat"/>
+            <View
+               android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/phone_connections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bordered_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:text="Settings "/>
+            <View
+               android:layout_marginTop="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+
+        </LinearLayout>
+
+<!--        BackEnd   -->
+         <!--   <TextView
+
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Only SocioMee Connections "/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+   <TextView
+
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="400"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#4F4F4F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Only MsgMee Connections "/>
+
+            <View
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E3F4EA"/>
+   <TextView
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="25dp"
+       android:layout_marginBottom="20dp"
+       android:fontFamily="@font/poppins_regular"
+       android:text="Only my Phone Connections "
+       android:textColor="#4F4F4F"
+       android:textFontWeight="400"
+       android:textSize="15dp" />
+-->
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

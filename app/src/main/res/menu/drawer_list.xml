@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myProfile"
+        android:icon="@drawable/camera_ic"
+        android:visible="false"
+        android:title="My profile" />
+    <item
+        android:id="@+id/people"
+        android:icon="@drawable/ic_baseline_videocam_24"
+        android:visible="false"
+        android:title="People" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/flag_cambodia"
+        android:visible="false"
+        android:title="Settings" />
+</menu>

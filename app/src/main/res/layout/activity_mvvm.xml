@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MVVM">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_mvvm"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pic" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/mobile"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:fontFamily="@font/poppins_bold"
+               android:textStyle="bold|italic"
+               android:textSize="16dp"/>
+
+                <TextView
+               android:id="@+id/dob"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:fontFamily="@font/poppins_bold"
+               android:textStyle="bold|italic"
+               android:textSize="16dp"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_alarm_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="#56CCF2"
+                    app:elevation="6dp"
+                    app:fabSize="auto"
+                    app:pressedTranslationZ="12dp"
+                    app:srcCompat="@drawable/ic_baseline_block_24"
+                    app:tint="@android:color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/add_alarm_action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/add_alarm_fab"
+                    android:background="@drawable/green_curve_box"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audio" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_person_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/add_alarm_fab"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="80dp"
+                    android:backgroundTint="@color/light_green"
+                    app:elevation="6dp"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/ic_baseline_mic_none_24"
+                    app:tint="@android:color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/add_person_action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="-20dp"
+                    android:layout_toRightOf="@id/add_person_fab"
+                    android:background="@drawable/green_curve_box"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Contact" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/add_fab"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/add_person_action_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/light_green"
+                    android:text="Actions"
+                    app:icon="@drawable/ic_baseline_person_add_24"
+                    app:tint="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

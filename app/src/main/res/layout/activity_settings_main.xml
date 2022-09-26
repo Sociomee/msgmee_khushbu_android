@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings.SettingsMain">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/arr"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:onClick="back"
+            android:outlineAmbientShadowColor="@color/black"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/arr"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Settings "
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="SAVE"
+            android:textColor="@color/light_green"
+            android:textFontWeight="500"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/neww"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:textColor="#4F4F4F"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+
+        <TextView
+            android:id="@+id/chats_setting"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#4F4F4F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat Settings"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+        <TextView
+            android:id="@+id/gp"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#4F4F4F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Settings"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+        <TextView
+            android:id="@+id/broadcast"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#4F4F4F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification Settings"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+        <!-- <TextView-->
+        <!--     android:fontFamily="@font/poppins_regular"-->
+        <!--                android:textFontWeight="400"-->
+        <!--                android:textSize="15dp"-->
+        <!--                android:layout_marginLeft="25dp"-->
+        <!--                android:textColor="#4F4F4F"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Archived Chats List"/>-->
+
+        <!--            <View-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="1dp"-->
+        <!--                android:background="#E3F4EA"/>-->
+
+        <TextView
+            android:id="@+id/storage"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#4F4F4F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage and Data Settings"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+        <TextView
+            android:id="@+id/block"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#4F4F4F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blocked Users"/>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+
+        <TextView
+            android:id="@+id/syncing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Syncing and Invite"
+            android:textColor="#4F4F4F"
+            android:textFontWeight="400"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+
+        <TextView
+            android:id="@+id/text_help_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Help &amp; Support"
+            android:textColor="#4F4F4F"
+            android:textFontWeight="400"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+        <TextView
+            android:id="@+id/log_out"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#4F4F4F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"/>
+  <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3F4EA"/>
+
+        <TextView
+            android:id="@+id/delete_account"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="#F2994A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Account"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_blocked_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/blocke_image"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/categories2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+           <TextView
+               android:id="@+id/text_block_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Theresa Webb"
+               android:textSize="14sp"
+               android:textColor="@color/black"
+               android:textFontWeight="500"
+               android:fontFamily="@font/poppins_regular"
+               app:layout_constraintStart_toEndOf="@+id/blocke_image"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="theresa_test"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textFontWeight="400"
+            android:textColor="#4F4F4F"
+            app:layout_constraintStart_toStartOf="@+id/text_block_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_block_name"
+            android:layout_marginTop="-7dp"/>
+
+        <Button
+            android:id="@+id/unblock_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unblock"
+            android:textAllCaps="false"
+            android:backgroundTint="#EB5757"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="15dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

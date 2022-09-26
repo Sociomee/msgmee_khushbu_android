@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/curv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="5dp"
+            android:background="@drawable/grey_curve_box"/>
+
+        <TextView
+            android:layout_margin="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Enter DOB"
+            android:textColor="#333333"
+            android:textFontWeight="500"
+            android:textSize="25dp" />
+
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/outline_square_grey_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp">
+
+                <EditText
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/niramit_regular"
+                    android:hint="10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColorHint="@drawable/selector"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textFontWeight="400"
+                    android:textSize="15dp"
+                    android:textColor="#BDBDBD"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginHorizontal="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/outline_square_grey_trans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="25dp">
+
+                    <EditText
+                        android:id="@+id/month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:digits="QWERTYUIOPASDFGHJKLZXCVBNM qwertyuiopasdfghjklzxcvbnm"
+                        android:fontFamily="@font/niramit_regular"
+                        android:hint="Jan"
+                        android:maxLength="4"
+                        android:textColorHint="@drawable/selector"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="month"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textFontWeight="400"
+                    android:textSize="15dp"
+                    android:textColor="#BDBDBD"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/outline_square_grey_trans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="25dp">
+
+                    <EditText
+                        android:id="@+id/year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/niramit_regular"
+                        android:hint="2021"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColorHint="@drawable/selector"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="year"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textFontWeight="400"
+                    android:textSize="15dp"
+                    android:textColor="#BDBDBD"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

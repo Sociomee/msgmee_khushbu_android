@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/curv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/grey_curve_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Choose Gender"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="25dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_one"
+                        android:layout_marginHorizontal="60dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:buttonTint="@color/light_green"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layoutDirection="rtl"
+                        android:text="Male"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3F4EA" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_two"
+                        android:layout_marginHorizontal="60dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:buttonTint="@color/light_green"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layoutDirection="rtl"
+                        android:text="Female"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3F4EA" />
+
+
+                    <RadioButton
+                        android:layout_marginHorizontal="60dp"
+                        android:id="@+id/radio_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:buttonTint="@color/light_green"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layoutDirection="rtl"
+                        android:text="I am Special"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3F4EA" />
+
+                </RadioGroup>
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/other_gender_view"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How should we address you"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textFontWeight="600"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonHe"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:buttonTint="@color/light_green"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layoutDirection="rtl"
+                        android:text="He"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3F4EA" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonShe"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:buttonTint="@color/light_green"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layoutDirection="rtl"
+                        android:text="She"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3F4EA" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButtonNo"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:buttonTint="@color/light_green"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layoutDirection="rtl"
+                        android:text="Rather not specify"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E3F4EA"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
